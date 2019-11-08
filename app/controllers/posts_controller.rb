@@ -6,7 +6,6 @@ class PostsController < ApplicationController
     end
 
     def create
-        byebug
         #if(current_user)    
             post = Post.create(
                 comment: params[:comment],

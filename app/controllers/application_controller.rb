@@ -4,6 +4,6 @@ class ApplicationController < ActionController::API
     end
 
     def profile
-        render json: current_user, methods: [ :file_url ]
+        render json: current_user, include: [ :posts ], methods: [ :file_url ]
     end
 end
