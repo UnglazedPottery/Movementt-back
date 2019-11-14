@@ -33,8 +33,8 @@ class UsersController < ApplicationController
     end
     
     def destroy
-        current_user.destroy
-        render json: current_user
+        session[:user_id] = nil
+        render json: { id: nil }
     end
         
     def define_current_user

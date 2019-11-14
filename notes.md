@@ -7,4 +7,6 @@
 -make controllers and routes 
 -rails s 
 
--byebuf for debug help 
+-byebug for debug help 
+ps ax |  grep 3000
+kill 2131 

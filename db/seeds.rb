@@ -17,38 +17,58 @@ bob = User.create(
     description: ""
 )
 
-sam = User.create(
-    username: "sam",
+kyle = User.create(
+    username: "KyleHanagami",
     password: "password",
     description: ""
 )
 
-post1 = Post.create(
-    comment: "Had a great time at FlatIron Dance Studios",
-    user_id: 1
+jaja = User.create(
+    username: "JajaVankova",
+    password: "password",
+    description: ""
 )
 
-post2 = Post.create(
-    comment: "collab with Alexa Goode",
-    user_id: 2
+travis = User.create(
+    username: "TravisWall",
+    password: "password",
+    description: ""
 )
 
-tag1 = Tag.create(
-    name: "#flatironstudios"
+tango = User.create(
+    username: "HeartOfTango",
+    password: "password",
+    description: ""
 )
 
-tag2 = Tag.create(
-    name: "#heels"
-)
 
-postTag1 = PostTag.create(
-    post_id: 1,
-    tag_id: 1
-)
 
-postTag2 = PostTag.create(
-    post_id: 2,
-    tag_id: 2
-)
+# post1 = Post.create(
+#     comment: "Had a great time at FlatIron Dance Studios",
+#     user_id: 1
+# )
+
+# post2 = Post.create(
+#     comment: "collab with Alexa Goode",
+#     user_id: 2
+# )
+
+# tag1 = Tag.create(
+#     name: "#flatironstudios"
+# )
+
+# tag2 = Tag.create(
+#     name: "#heels"
+# )
+
+# postTag1 = PostTag.create(
+#     post_id: 1,
+#     tag_id: 1
+# )
+
+# postTag2 = PostTag.create(
+#     post_id: 2,
+#     tag_id: 2
+# )
 
 
