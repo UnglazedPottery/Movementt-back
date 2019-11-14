@@ -21,7 +21,7 @@ class UsersController < ApplicationController
     end
     
     def show
-        render json: current_user, include: [ :posts ], methods: [ :file_url ]
+        render json: current_user, include: { posts: { methods: [ :file_url ] } }, methods: [ :file_url ]
     end
     
     def update
