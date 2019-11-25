@@ -9,10 +9,10 @@ local:
 
 amazon:
   service: S3
-  access_key_id: ""
-  secret_access_key: ""
-  region: ""
-  bucket: ""
+  access_key_id: <%= ENV[AWS_ACCESS_KEY] %>
+  secret_access_key: <%= ENV[AWS_SECRET_ACCESS_KEY] %>
+  region: "US East (Ohio)"
+  bucket: "movementt-bucket"
 
 # amazon:
 #   service: S3
