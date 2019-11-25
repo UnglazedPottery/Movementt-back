@@ -102,8 +102,9 @@ Rails.application.configure do
   # config.active_record.database_selector = { delay: 2.seconds }
   # config.active_record.database_resolver = ActiveRecord::Middleware::DatabaseSelector::Resolver
   # config.active_record.database_resolver_context = ActiveRecord::Middleware::DatabaseSelector::Resolver::Session
+
+  # Store files on Amazon S3.
+  config.active_storage.service = :amazon
 end
 
 
-# Store files on Amazon S3.
-config.active_storage.service = :amazon
