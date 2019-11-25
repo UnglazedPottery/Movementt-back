@@ -11,4 +11,6 @@ Rails.application.routes.draw do
     post('/login', to: 'authentication#login')
     get('/currentuser', to: 'application#profile')
     get('/logout', to: 'users#destroy')
+
+    get '*path', to: "application#react_app"
 end

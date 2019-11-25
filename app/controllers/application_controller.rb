@@ -14,4 +14,8 @@ class ApplicationController < ActionController::API
             render json: { error: true }
         end
     end
+
+    def react_app
+        render :file => 'public/index.html'
+    end
 end
